@@ -1,0 +1,25 @@
+Crie um sistema web chamado Gabaritte, uma plataforma inteligente de estudos voltada para concurseiros. O objetivo do projeto é permitir que os usuários organizem seus estudos de forma completa e automatizada, criando planos personalizados, adicionando disciplinas e tópicos, acompanhando o progresso em tempo real e recebendo sugestões inteligentes de trilhas de aprendizado geradas por IA.
+
+O sistema deve ser desenvolvido preferencialmente com Vite + React + Tailwind CSS no frontend e Node.js (Express) ou Firebase no backend, com banco de dados Firestore ou PostgreSQL. Utilize Firebase Auth para autenticação de usuários (com login via Google e e-mail/senha). Prepare também uma estrutura modular para futura integração com uma API de Inteligência Artificial, responsável por sugerir cronogramas e trilhas de estudo personalizadas.
+
+O design deve ser limpo, moderno e responsivo, com paleta de cores composta por azul-violeta (#4F46E5) como cor primária, verde sucesso (#22C55E), azul informação (#3B82F6), amarelo aviso (#F59E0B), vermelho erro (#EF4444) e fundo cinza claro (#F9FAFB). Utilize ícones do Lucide-react e animações suaves com Framer Motion.
+
+A estrutura principal da aplicação deve conter os seguintes menus e funcionalidades:
+
+1. Planos: permitir ao usuário criar, visualizar e editar planos de estudo. Cada plano deve ter nome, tipo (Concurso, Profissão, Faculdade ou Outro), prazo final e carga horária diária. Deve ser possível duplicar, excluir ou exportar planos.
+
+2. Disciplinas: associadas a um plano, cada disciplina deve conter tópicos e subtópicos, com barra de progresso e opção de importar modelos prontos (como “Português para Concursos”).
+
+3. Trilhas: apresentar trilhas de estudo completas criadas pela IA, como “Trilha BACEN TI” ou “Trilha Polícia Federal”, que o usuário pode aplicar diretamente a um plano. Cada trilha deve incluir disciplinas, tópicos e uma ordem de estudo sugerida.
+
+4. Cronograma: gerar automaticamente um cronograma de estudos com base nas horas disponíveis e no prazo do plano. Exibir o cronograma em formato de calendário ou kanban (“Hoje”, “Amanhã”, “Próximos Dias”), com reordenação automática caso o usuário não estude em determinado dia. Deve haver um botão para iniciar uma sessão de estudo com cronômetro e registro automático de tempo.
+
+5. Estatísticas: exibir gráficos e indicadores de desempenho, como tempo total estudado por dia, semana e mês, percentual de conclusão de disciplinas e tópicos mais estudados.
+
+6. Histórico: registrar todas as sessões de estudo, revisões e simulados realizados. Exibir em formato de linha do tempo e permitir exportação em PDF.
+
+7. Configurações: incluir opções de tema claro/escuro, idioma (PT-BR/EN), notificações, lembretes e vinculação de conta (Google, GitHub, etc.).
+
+8. FAQ: listar perguntas frequentes sobre o uso da plataforma, com busca por palavra-chave e exibição em formato de cards expansíveis.
+
+9. HelpDesk: oferecer suporte via sistema de tickets ou chat simples, com categorias (“Problema técnico”, “Sugestão”, “Dúvida sobre plano”) e status (aberto, em andamento, resolvido).
